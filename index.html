@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+       -- css Syntax--
+            <selector>
+                {
+                    css-property : css-value;
+                }
+        */
+
+        /* 
+        Box model to study
+        inline element
+        block element
+         */
+        
+        body { 
+            background-color:antiquewhite;
+            }  
+
+        h1{
+            border: 1px solid ;
+            margin-inline: 1px;
+            text-align: center;
+            padding: 1px;
+            color: blueviolet;
+            text-transform: uppercase;
+            display: block;
+            }
+            nav li {
+                display: inline;
+                border: 1px solid red;
+                padding: .5rem 1rem .5rem 1rem;
+                border-radius: .5rem;  
+                gap: 2rem;
+                margin: .5rem 1rem .5rem 1rem;;
+
+
+            }
+
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+
+                /* margin-left: 10px;
+                margin-right: 10px;
+                padding: 10px; */
+            }
+
+            img{height: 200px; width: 200px;}
+            .bold{font-weight: bold;}
+            .pred{color:cornflowerblue; font-weight:bold}
+
+        
+            table,th,td{border: 1px solid ;padding: 5px;border-color: brown;text-align: center;border-collapse: collapse ;color: cadetblue;}
+            .border{border: 1px solid ;border-collapse: collapse,}   
+
+            
+                
+    </style>
+</head> 
+
+<body>
+    <header class="head"> 
+        <nav  >
+            <ul></ul>
+                <li >
+                    <a  class="bold" href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./mern/course.html">Course</a>
+                </li>
+                <li>
+                    <a href="./mern/pyton.html">Python</a>
+                </li>
+                <li>
+                    <a href="./mern/mern.html">mern</a>
+                </li>
+                <li>
+                    <a href="./mern/upcoming/qa.html">QA</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1>Web Development</h1>
+
+    <h2>Html</h2>
+
+    <p class="pred">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, placeat!</p>
+
+    <h2>CSS</h2>
+    <ol>
+        <li>External_css</li>
+        <li>Internal_css</li>
+        <li>In-Line_css</li>
+    </ol>
+
+    <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, rerum?</P>
+
+    <h3>selector</h3>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, blanditiis.</p>
+
+    <h3>Typography</h3>
+
+    <p class="border" style="margin:20px; padding: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, cum quia! Et quisquam dolorem cupiditate! Ducimus quisquam debitis incidunt provident accusantium, accusamus sit facere maxime esse nulla nisi iste error dolore dolor quis magni amet doloribus odit rem ipsa porro. Reprehenderit iste voluptas reiciendis veritatis laboriosam impedit corrupti! Ea, incidunt.</p>
+
+    <hr>
+    <caption>unordered List Tags</caption>
+    <ul>
+        <li>
+            <dl>
+                <dt>Name</dt>
+                <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, possimus!</dd>
+        </li>
+        <li>
+            <dt>Email</dt>
+            <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, explicabo.</dd>
+        </li>  
+        </dl>
+    </ul>
+
+    <caption>ordered List Tags</caption>
+    <ol type="A">
+        <li>
+            <dl>
+                <dt>Name</dt>
+                <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, possimus!</dd>
+        </li>
+        <li>
+            <dt>Email</dt>
+            <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, explicabo.</dd>
+        </li>  
+        </dl>
+    </ol>
+    <hr>
+
+    <img src="https://www.20i.com/blog/wp-content/uploads/2022/08/git-blog-header-1536x864.png"  alt="git">
+
+    <a  target="_blank" href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwj9lZiWqcCBAxWlSWwGHVZNBqQQPAgJ">
+
+        <img src="https://www.sectorlink.com/img/blog/web-devel-important.jpg"  alt="web">
+    </a>
+
+
+    <table >
+        <caption>Table Example</caption>
+        <colgroup>
+            <col span="1" style="background-color: #D6EEEE">
+          </colgroup>
+          <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>Ram</td>
+                <td>Ram@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Shyam</th>
+                <td>shyam@gmail.com</td>
+            </tr>
+          </tbody>
+    </table>
+
+    <br>
+
+    <table >
+        <caption>Table Colspan Example</caption>
+        <thead>
+            <tr>
+                <th>S.no</td>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>Mouse</td>
+                <td>1000</td>
+                <td>1</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>KeyBoard</td>
+                <td>2000</td>
+                <td>3</td>
+                <td>4000</td>
+            </tr>
+            <tr>
+                <td  class="pred" colspan="4">Total</td>
+                <td>5000</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+
+    <table>
+        <caption>Table colspan & Rowspan Example</caption>
+        <thead>
+            <tr>
+                <th colspan="2">Name</th>
+                <th rowspan="2">Email</th>
+            </tr>
+            <tr>
+                <th>First_Name</th>
+                <th>Last_Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Shankar</td>
+                <td>Gajmer</td>
+                <td>Shankar@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Jack</td>
+                <td>Bale</td>
+                <td>jack@gmail.com</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>John@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Ram</td>
+                <td>Shah</td>
+                <td>Ram@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Rohit</td>
+                <td>choudhary</td>
+                <td>Rohit@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+    
+<br>
+    <footer>
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100055884669507">rohit_Don
+
+        </a>
+        <a target="_blank" href="https://www.youtube.com/">YOUTUBE</a>
+    </footer>
+    
+</body>
+</html>

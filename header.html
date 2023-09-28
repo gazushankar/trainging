@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul{
+            display: flex;
+            gap: 2rem;
+            list-style-type: none;
+        } 
+        main{
+            padding: 1rem;
+            margin: 1rem;
+            background-color: aquamarine;
+        }
+        .container{
+            padding: 1rem;
+            margin: 1rem;
+        }
+        header{
+            background-color: #333 ;
+            margin-bottom: 1rem;
+            padding-left: 32rem;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        header a{
+            color: inherit;
+            text-decoration: none;
+        }
+        .active{
+            color: yellow;
+        }
+        .tab p{
+            border: 1px solid ;
+            padding: .5rem 1rem .5rem 1rem;
+             /* top right bottom left */
+            border-radius:  .75rem;
+
+        }
+        .tab{
+            display: flex;
+            gap: 1rem;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <nav >
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <main class="container">
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, cupiditate delectus. Sequi odit officiis accusamus provident maxime cum quibusdam at tenetur vel, ex omnis quam corrupti fuga repudiandae impedit ipsa ab asperiores ullam expedita laborum quod doloribus molestiae iste? Dolores nesciunt doloribus odio perspiciatis nobis quasi est cumque minima saepe?</p>
+        <br>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, cupiditate delectus. Sequi odit officiis accusamus provident maxime cum quibusdam at tenetur vel, ex omnis quam corrupti fuga repudiandae impedit ipsa ab asperiores ullam expedita laborum quod doloribus molestiae iste? Dolores nesciunt doloribus odio perspiciatis nobis quasi est cumque minima saepe?</p>
+        <br>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, cupiditate delectus. Sequi odit officiis accusamus provident maxime cum quibusdam at tenetur vel, ex omnis quam corrupti fuga repudiandae impedit ipsa ab asperiores ullam expedita laborum quod doloribus molestiae iste? Dolores nesciunt doloribus odio perspiciatis nobis quasi est cumque minima saepe?  </p>
+    </main>
+
+    <div class="tab container">
+        <p class="active">Image</p>
+        <p>Video</p>
+        <p>Audio</p>
+
+    </div>
+</body>
+</html>
